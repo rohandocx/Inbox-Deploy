@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD; 
+const USERNAME = "user";
+const PASSWORD = "1234"; 
 
 const Connection = () => {
     const DB_URI = `mongodb://${USERNAME}:${PASSWORD}@ac-akbqnst-shard-00-00.mzqjtmv.mongodb.net:27017,ac-akbqnst-shard-00-01.mzqjtmv.mongodb.net:27017,ac-akbqnst-shard-00-02.mzqjtmv.mongodb.net:27017/?ssl=true&replicaSet=atlas-jtxlsm-shard-0&authSource=admin&retryWrites=true&w=majority`;
